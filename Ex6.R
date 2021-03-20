@@ -133,6 +133,7 @@ names(fake_df) <- c('SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidth', 'S
 
 
 # add noise
+library(sdcMicro)
 dataframe_noise <- addNoise(fake_df[, c(1,2,3,4)], noise = 10, method = "correlated")
 
 noise <- dataframe_noise$xm
